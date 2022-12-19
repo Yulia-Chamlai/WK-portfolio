@@ -716,6 +716,7 @@ hr {
   position: relative;
   -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   .portfolio .item {
@@ -742,6 +743,7 @@ hr {
   top: 0;
   z-index: 3;
   opacity: 0;
+  cursor: pointer;
 }
 .portfolio .item__icon {
   width: 76px;
