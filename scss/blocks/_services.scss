@@ -1,0 +1,60 @@
+.services {
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    @include tablet-small {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+  }
+  .item {
+    border-radius: $radius-card;
+    background: $color-dark2;
+    padding: 32px;
+    display: flex;
+    gap: 20px;
+    &__icon {
+      min-width: 76px;
+      min-height: 76px;
+      height: 76px;
+      background: $color-dark1;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__title {
+      @include text($font, 500, 22px, 26px, $color-white);
+    }
+
+    &__desc {
+      @include text($font, 400, 16px, 26px, $color-desc);
+    }
+  }
+}
+.title {
+  @include text($font, 700, 44px, 52px, $color-white);
+  margin-bottom: 17px;
+
+  span {
+    color: $color-primary;
+  }
+}
+.desc {
+  @include text($font, 400, 16px, 26px, $color-desc);
+  max-width: 460px;
+  margin-bottom: 40px;
+}

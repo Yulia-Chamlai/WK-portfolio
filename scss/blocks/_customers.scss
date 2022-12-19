@@ -1,0 +1,39 @@
+.customers {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  &__list {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    @include tablet-small {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    background: $color-dark2;
+    border-radius: 8px;
+    padding: 32px;
+  }
+}
+
+.item {
+  &__desc {
+    @include text($font, 400, 18px, 29px, $color-white);
+    margin-bottom: 28px;
+  }
+
+  &__details {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}
+.info {
+  &__name {
+    @include text($font, 500, 18px, 29px, $color-white);
+  }
+  &__speciality {
+    @include text($font, 400, 18px, 29px, $color-primary);
+  }
+}

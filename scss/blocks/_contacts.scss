@@ -1,0 +1,23 @@
+.contacts {
+  margin-bottom: 90px;
+  margin-top: 90px;
+  input,
+  textarea {
+    display: block;
+    margin-bottom: 24px;
+    width: 100%;
+    background: $color-dark1;
+    color: $color-white;
+    height: 45px;
+    border: 1px solid $color-white-alfa;
+    border-radius: 4px;
+    padding: 14px 16px;
+    ::placeholder {
+      @include text($font, 400, 14px, 17px, $color-desc);
+    }
+  }
+
+  textarea {
+    height: 120px;
+  }
+}

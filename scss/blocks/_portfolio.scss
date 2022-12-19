@@ -1,0 +1,41 @@
+.portfolio {
+  margin-top: 90px;
+  margin-bottom: 90px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    @include tablet-small {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+  }
+  .item {
+    position: relative;
+    @include tablet-small {
+      width: 100%;
+    }
+    img {
+      border-radius: 8px;
+      @include tablet-small {
+        width: 100%;
+      }
+    }
+    &__icon {
+      width: 76px;
+      height: 76px;
+      background: $color-primary;
+      position: absolute;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      border-radius: 50%;
+      left: 40%;
+      top: 33%;
+      display: none;
+    }
+  }
+}
