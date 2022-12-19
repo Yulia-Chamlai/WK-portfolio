@@ -9,9 +9,8 @@
 @import "blocks/customers";
 @import "blocks/pricing";
 @import "blocks/contacts";
+@import "blocks/footer";
 
-.container {
-}
 .btn {
   padding: 13px 18px;
   display: inline-block;
@@ -23,42 +22,5 @@
   transition: $transition;
   &:hover {
     background: darken($color-primary, 5%);
-  }
-}
-.title {
-}
-.desc {
-}
-
-.footer {
-  background: $color-dark2;
-  padding-top: 53.5px;
-  padding-bottom: 53.5px;
-  max-width: 1440px;
-  margin: 0 auto;
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include tablet {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-  }
-  .copyright {
-    @include text($font, 400, 16px, 19px, $color-white);
-    span {
-      color: $color-primary;
-    }
-  }
-
-  .links {
-    display: flex;
-    gap: 34px;
-
-    &__a {
-      @include text($font, 400, 16px, 19px, $color-white);
-    }
   }
 }

@@ -404,6 +404,11 @@ hr {
   font-size: 28px;
   line-height: 33px;
   color: #ffffff;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.header__logo:hover {
+  color: #ed9902;
 }
 .header span {
   color: #ed9902;
@@ -709,19 +714,34 @@ hr {
 }
 .portfolio .item {
   position: relative;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 @media (max-width: 768px) {
   .portfolio .item {
     width: 100%;
   }
 }
+.portfolio .item:hover .overlay {
+  opacity: 1;
+}
 .portfolio .item img {
   border-radius: 8px;
+  position: relative;
 }
 @media (max-width: 768px) {
   .portfolio .item img {
     width: 100%;
   }
+}
+.portfolio .item .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: 0;
+  z-index: 3;
+  opacity: 0;
 }
 .portfolio .item__icon {
   width: 76px;
@@ -740,7 +760,12 @@ hr {
   border-radius: 50%;
   left: 40%;
   top: 33%;
-  display: none;
+  display: flex;
+}
+.portfolio .item__icon.span {
+  position: absolute;
+  left: 50%;
+  bottom: 38%;
 }
 
 .customers {
@@ -944,25 +969,6 @@ hr {
   height: 120px;
 }
 
-.btn {
-  padding: 13px 18px;
-  display: inline-block;
-  border: 0;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-  background: #ed9902;
-  border-radius: 5px;
-  cursor: pointer;
-  -webkit-transition: 0.2s all ease-in-out;
-  transition: 0.2s all ease-in-out;
-}
-.btn:hover {
-  background: #d48902;
-}
-
 .footer {
   background: #2d2b29;
   padding-top: 53.5px;
@@ -1013,4 +1019,28 @@ hr {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.footer .links__a:hover {
+  color: #ed9902;
+}
+
+.btn {
+  padding: 13px 18px;
+  display: inline-block;
+  border: 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background: #ed9902;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.btn:hover {
+  background: #d48902;
 }

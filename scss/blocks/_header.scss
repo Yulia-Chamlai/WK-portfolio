@@ -5,6 +5,10 @@
   padding: 37px 0;
   &__logo {
     @include text($font, 700, 28px, 33px, $color-white);
+    transition: $transition;
+    &:hover {
+      color: $color-primary;
+    }
   }
   span {
     color: $color-primary;
