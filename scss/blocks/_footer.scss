@@ -19,6 +19,9 @@
     span {
       color: $color-primary;
     }
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   .links {

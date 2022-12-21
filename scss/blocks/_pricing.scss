@@ -47,7 +47,7 @@
   cursor: pointer;
   transition: $transition;
   &:hover {
-    background: lighten($color-dark2, 10%);
+    background: $color-primary;
   }
 }
 .points {

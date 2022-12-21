@@ -714,8 +714,6 @@ hr {
 }
 .portfolio .item {
   position: relative;
-  -webkit-transition: 0.2s all ease-in-out;
-  transition: 0.2s all ease-in-out;
   cursor: pointer;
 }
 @media (max-width: 768px) {
@@ -744,6 +742,8 @@ hr {
   z-index: 3;
   opacity: 0;
   cursor: pointer;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 .portfolio .item__icon {
   width: 76px;
@@ -768,6 +768,9 @@ hr {
   position: absolute;
   left: 50%;
   bottom: 38%;
+}
+.portfolio .item__icon .material-icons {
+  font-size: 37px;
 }
 
 .customers {
@@ -890,7 +893,7 @@ hr {
   transition: 0.2s all ease-in-out;
 }
 .btn-secondary:hover {
-  background: #484541;
+  background: #ed9902;
 }
 
 .points {
@@ -934,6 +937,7 @@ hr {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 4px;
   padding: 14px 16px;
+  resize: vertical;
 }
 .contacts input ::-webkit-input-placeholder,
 .contacts textarea ::-webkit-input-placeholder {
@@ -1008,6 +1012,11 @@ hr {
 }
 .footer .copyright span {
   color: #ed9902;
+}
+@media (max-width: 576px) {
+  .footer .copyright {
+    font-size: 14px;
+  }
 }
 .footer .links {
   display: -webkit-box;

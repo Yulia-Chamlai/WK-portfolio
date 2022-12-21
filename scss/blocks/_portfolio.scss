@@ -15,7 +15,7 @@
   }
   .item {
     position: relative;
-    transition: $transition;
+
     cursor: pointer;
 
     @include tablet-small {
@@ -40,6 +40,7 @@
       z-index: 3;
       opacity: 0;
       cursor: pointer;
+      transition: $transition;
     }
     &__icon {
       width: 76px;
@@ -57,6 +58,9 @@
         position: absolute;
         left: 50%;
         bottom: 38%;
+      }
+      .material-icons {
+        font-size: 37px;
       }
     }
   }
