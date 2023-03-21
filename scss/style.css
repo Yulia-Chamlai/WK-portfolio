@@ -466,8 +466,8 @@ hr {
     background: rgba(0, 0, 0, 0.8);
     -webkit-transform: translateX(-150%);
             transform: translateX(-150%);
-    -webkit-transition: 1s all ease-in-out;
-    transition: 1s all ease-in-out;
+    -webkit-transition: 0.2s all ease-in-out;
+    transition: 0.2s all ease-in-out;
   }
   .header-nav .header-nav__ul {
     -webkit-box-orient: vertical;
